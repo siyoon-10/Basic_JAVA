@@ -1,5 +1,7 @@
 package chapter04;
 
+import java.util.Scanner;
+
 public class IfElse03 {
 	
 	// 90점 이상이면 A등급
@@ -11,6 +13,14 @@ public class IfElse03 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		Scanner sc = new Scanner (System.in);
+		int score = 0;
+		score = sc.nextInt();
+		
+
+		if(score >=90)
+		
+		
 	}
 
 }
