@@ -13,7 +13,6 @@ public class ReversePrint {
  * 3
  * 2
  * 1
- * 
  */
 	
 	public static void main(String[] args) {
@@ -23,13 +22,14 @@ public class ReversePrint {
 		System.out.print("입력>>");
 
 		Scanner sc = new Scanner(System.in);
+		// num1에 키보드로 입력한 정수값이 저장
 		int num1 = sc.nextInt();
 		
 		for(int i = 1; i <= num1; i++ ) {
 			System.out.println(i);
 		}
 		
-		System.out.println("역순으로 출력");
+		System.out.println("역순으로 출력 1 ");
 		
 		for(int i = num1; i > 0;i--) {
 		//   5           시작값: 5
@@ -38,6 +38,14 @@ public class ReversePrint {
 		//   2
 		//   1	
 			System.out.println(i);
+		}
+		System.out.println();
+		System.out.println("역순으로 출력");
+		
+		int finalNum = num1+1;
+		for(int i= 1; i <= finalNum;i++) {
+			num1 = num1-1;
+			System.out.println(num1);
 		}
 		
 		
